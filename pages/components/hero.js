@@ -16,6 +16,21 @@ export function Hero() {
 }
 
 export function Portrait(props) {
+    if (props.number == 2){
+        return (
+            <div className="pt-5 flex justify-center">
+              <div className="border-[8px] border-transparent bg-[--portrait-bg] w-[320px] h-[360px] bottom-0 relative">
+                <Image
+                  width={280}
+                  height={360}
+                  src="/Images/Pic2.png"
+                  className="absolute bottom-5 left-3"
+                />
+              </div>
+            </div>
+            )
+    }
+
   return (
     <div className="pt-5 flex justify-center">
       <div className="border-[8px] border-transparent bg-[--portrait-bg] w-[280px] h-[280px] bottom-0 relative">
@@ -33,7 +48,9 @@ export function Portrait(props) {
 function Hero_Paragraph() {
   return (
     <div className="flex flex-col gap-12">
-      <h1 className="mb-[-40px] text-[--head-color] text-4xl">Hi, I’m Sagar 👋</h1>
+      <h1 className="mb-[-40px] text-[--head-color] text-4xl">
+        Hi, I’m Sagar 👋
+      </h1>
       <p>
         I'm a full stack developer (React.js & Node.js) with a focus on creating
         (and occasionally designing) exceptional digital experiences that are
@@ -76,17 +93,17 @@ function Status() {
   );
 }
 function Social() {
-    let size = 24
+  let size = 24;
   return (
     <div className="flex gap-2">
       <div>
-        <LuGithub size={size}/>
+        <LuGithub size={size} />
       </div>
       <div>
-        <LuTwitter size={size}/>
+        <LuTwitter size={size} />
       </div>
       <div>
-        <LuFigma size={size}/>
+        <LuFigma size={size} />
       </div>
     </div>
   );

@@ -16,6 +16,8 @@
   --portrait-bg: #374151;
 
   --status-available: #10B981;
+
+  --sec-bg-color : #111827;
 }
 
 @media (prefers-color-scheme: dark) {
