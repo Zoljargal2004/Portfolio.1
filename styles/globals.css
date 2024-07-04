@@ -14,6 +14,8 @@
   --text-on-button: #111827;
   --line-bg:#1F2937;
   --portrait-bg: #374151;
+
+  --status-available: #10B981;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,4 +40,8 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+*{
+  color: var(--text-color);
 }
