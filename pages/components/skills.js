@@ -24,7 +24,7 @@ export function Skills() {
     <div className="bg-[--bg-color] px-4 py-16">
       <div className="flex flex-col gap-4 items-center">
         <Topic title="Skills" />
-        <span className="mb-2">
+        <span className="mb-2 text-[18px]">
           The skills, tools and technologies I am really good at:
         </span>
         <Skill_set/>

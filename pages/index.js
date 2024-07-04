@@ -4,6 +4,7 @@ import { Header } from "./components/header";
 import { Hero } from "./components/hero";
 import { About } from "./components/About";
 import { Skills } from "./components/skills";
+import { Experience } from "./components/experience";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero/>
       <About />
       <Skills/>
+      <Experience/>
     </main>
   );
 }
