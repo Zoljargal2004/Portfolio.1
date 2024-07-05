@@ -1,11 +1,11 @@
 import { Portrait } from "./hero"
 
 export function About(){
-    return <div className="bg-[--sec-bg-color] px-4 py-16">
-        <div className="flex flex-col items-center text-sm gap-12">
+    return <div className="bg-[--sec-bg-color] px-4 py-16 lg:px-20 lg:py-24">
+        <div className="flex flex-col items-center text-sm gap-12 lg:px-8">
             <Topic title = "About me"/>
-            <div className="mt-[-24px] flex flex-col gap-[48px]">
-                <Portrait number = {2} className=""/>
+            <div className="mt-[-24px] flex flex-col gap-[48px] lg:grid lg:grid-cols-2 lg:gap-12">
+                <Portrait number = {2}/>
                 <About_para/>
             </div>
             
@@ -19,7 +19,7 @@ export function Topic(props){
 
 function About_para(){
     return <div className=" flex flex-col gap-4">
-        <h1 className="text-[--head-color] text-2xl mb-2">Curious about me? Here you have it:</h1>
+        <h1 className="text-[--head-color] text-2xl mb-2 lg:text-3xl">Curious about me? Here you have it:</h1>
         <p>
         I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
         </p>

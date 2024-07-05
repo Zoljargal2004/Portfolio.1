@@ -6,9 +6,9 @@ import { LuFigma } from "react-icons/lu";
 
 export function Hero() {
   return (
-    <div className="bg-[--bg-color] py-16 px-4">
-      <div className="flex flex-col items-center gap-12">
-        <Portrait size="" portrait="first" />
+    <div className="bg-[--bg-color] py-16 px-4 lg:px-20 lg:py-24">
+      <div className="flex flex-col items-center gap-12 max-w-7xl lg:flex-row-reverse lg:px-8">
+        <Portrait portrait="first" />
         <Hero_Paragraph />
       </div>
     </div>
@@ -16,39 +16,34 @@ export function Hero() {
 }
 
 export function Portrait(props) {
-    if (props.number == 2){
-        return (
-            <div className="pt-5 flex justify-center">
-              <div className="border-[8px] border-transparent bg-[--portrait-bg] w-[320px] h-[360px] bottom-0 relative">
-                <Image
-                  width={280}
-                  height={360}
-                  src="/Images/Pic2.png"
-                  className="absolute bottom-5 left-3"
-                />
-              </div>
-            </div>
-            )
-    }
-
   return (
-    <div className="pt-5 flex justify-center">
-      <div className="border-[8px] border-transparent bg-[--portrait-bg] w-[280px] h-[280px] bottom-0 relative">
-        <Image
-          width={240}
-          height={280}
-          src="/Images/Pic.png"
-          className="absolute bottom-5 left-3"
-        />
+    <div className="pt-5 lg:pt-10">
+      <div className="pt-5 flex justify-center lg:justify-start">
+        <div
+          className={
+            "border-[8px] bg-[--portrait-bg] " +
+            (props.number == 2 ? "border-[--sec-bg-color] w-[320px] lg:w-[400px] h-[360px] lg:h-[480px] " : "border-[--bg-color] w-[280px] lg:w-[280px] h-[280px] lg:h-[320px] ") +
+            " bottom-0 relative"
+          }
+        >
+          <img
+          alt="Portrait"
+            src={props.number == 2 ? "/Images/Pic2.png" : "/Images/Pic.png"}
+            className={
+              (props.number == 2 ? "w-[280px] lg:w-[400px] h-[360px] lg:h-[480px] lg:left-10" : "w-[240px] lg:w-[280px] h-[280px] lg:h-[320px] lg:left-[-40px] ") +
+              (" absolute bottom-3 left-3  lg:bottom-10 ")
+            }
+          />
+        </div>
       </div>
-    </div>
+    </div>  
   );
 }
 
 function Hero_Paragraph() {
   return (
     <div className="flex flex-col gap-12">
-      <h1 className="mb-[-40px] text-[--head-color] text-4xl">
+      <h1 className="mb-[-40px] text-[--head-color] text-4xl text-bold lg:text-6xl ">
         Hi, I’m Sagar 👋
       </h1>
       <p>
