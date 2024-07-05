@@ -92,7 +92,7 @@ function Status() {
     </div>
   );
 }
-function Social() {
+export function Social() {
   let size = 24;
   return (
     <div className="flex gap-2">

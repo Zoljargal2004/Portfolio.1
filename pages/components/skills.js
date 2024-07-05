@@ -42,7 +42,7 @@ function Skill_set(){
           }
       }
       return (
-        <div className="text-center flex flex-col items-center">
+        <div key={"skill_"+skills_lis.indexOf(skill)} className="text-center flex flex-col items-center">
           <div className="flex justify-center items-center h-16 w-16">
             <img  className="object-contain"
               

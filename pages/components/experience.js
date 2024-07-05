@@ -1,4 +1,7 @@
+import { stringify } from "postcss";
 import { Topic } from "./About";
+
+let i = 0;
 
 const experience_list = [
   {
@@ -10,7 +13,7 @@ const experience_list = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "Ut pretium arcu et massa semper, id fringilla leo semper.",
       "Sed quis justo ac magna.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elits."
     ],
   },
   {
@@ -19,7 +22,7 @@ const experience_list = [
     fire_date: "May 2017",
     job_title: "Full Stack Developer",
     description: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     ],
   },
   {
@@ -30,10 +33,10 @@ const experience_list = [
     description: [
       "Sed quis justo ac magna.",
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "Sed quis justo ac magna.",
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "Sed quis justo ac magnam.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elist."
     ],
-  }
+  },
 ];
 
 export function Experience() {
@@ -55,7 +58,10 @@ function WorkExperience() {
     <div className="w-[100%] max-w-[896px] flex flex-col gap-6">
       {experience_list.map((experience) => {
         return (
-          <div className="bg-[--line-bg] rounded-xl p-8">
+          <div
+            key={"experience_" + experience_list.indexOf(experience)}
+            className="bg-[--line-bg] rounded-xl p-8"
+          >
             <div className="flex flex-col gap-4">
               <div className="h-7">
                 <img
@@ -67,13 +73,23 @@ function WorkExperience() {
                 {experience.hire_date} - {experience.fire_date}
               </span>
               <div className="flex flex-col gap-4 ">
-                <h2 className="font-semibold text-lg">
-                    {experience.job_title}
+                <h2 className="font-semibold text-lg"> 
+                  {experience.job_title}
                 </h2>
                 <ul className="list-disc">
-                    {experience.description.map((task) => {
-                        return <li className="mb-1">{task}</li>
-                    })}
+                  {experience.description.map((task) => {
+                    return (
+                      
+                      <li
+                        key={
+                          "task" + experience_list.indexOf(experience) + (experience.description.indexOf(task))
+                        }
+                        className="mb-1"
+                      >
+                        {task}
+                      </li>
+                    );
+                  })}
                 </ul>
               </div>
             </div>
