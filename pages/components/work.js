@@ -5,7 +5,7 @@ import { CiShare1 } from "react-icons/ci";
 
 const work_lis = [
   {
-    page_img: "Fiskil_Preview.svg",
+    page_img: "Fiskil_Preview.png",
     name: "Fiskil",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
@@ -24,7 +24,7 @@ const work_lis = [
   },
 
   {
-    page_img: "Fiskil_Preview.svg",
+    page_img: "Fiskil_Preview.png",
     name: "Fiskil",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
@@ -43,7 +43,7 @@ const work_lis = [
   },
 
   {
-    page_img: "Fiskil_Preview.svg",
+    page_img: "Fiskil_Preview.png",
     name: "Fiskil",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.",
@@ -66,9 +66,9 @@ const work_lis = [
 export function Work() {
   return (
     <div className="bg-[--bg-color] px-4 py-16">
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-4 items-center max-w-7xl lg:m-auto">
         <Topic title="Work" />
-        <span className="mt-[-8px] text-lg text-center">
+        <span className="mt-[-8px] text-lg text-center mb-8">
           Some of the noteworthy projects I have built:
         </span>
         <Work_Projs />
@@ -82,17 +82,17 @@ function Work_Projs() {
     <div className="flex flex-col gap-6">
       {work_lis.map((project) => {
         return (
-          <div key={"project"+work_lis.indexOf(project)} className="flex flex-col rounded-xl overflow-hidden ">
-            <div className="p-8 bg-[--portrait-bg]">
-              <div className="w-[100%] h-[100%]">
+          <div key={"project"+work_lis.indexOf(project)} className={"flex flex-col rounded-xl overflow-hidden " + (work_lis.indexOf(project) % 2 ? "lg:flex-row" : "lg:flex-row-reverse")}>
+            <div className="p-8 bg-[--portrait-bg] max-w-[640px] lg:flex-1 lg:p-12">
+              <div className="rounded-xl overflow-hidden">
                 <img
-                  className="object-contain"
+                  className="object-center"
                   src={"/Images/Project_Preview/" + project.page_img}
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-6 p-8 bg-[--line-bg] ">
-              <span className="text-lg text-[--head-color] font-bold">{project.name}</span>
+            <div className="flex flex-col gap-6 p-8 bg-[--line-bg] lg:flex-1 ">
+              <span className="text-lg text-[--head-color] font-bold lg:text-xl">{project.name}</span>
               <p>
                 {project.description}
               </p>

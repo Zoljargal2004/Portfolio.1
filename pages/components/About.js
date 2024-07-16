@@ -1,8 +1,8 @@
 import { Portrait } from "./hero"
 
 export function About(){
-    return <div className="bg-[--sec-bg-color] px-4 py-16 lg:px-20 lg:py-24">
-        <div className="flex flex-col items-center text-sm gap-12 lg:px-8">
+    return <div className="bg-[--sec-bg-color] px-4 py-16 lg:px-20 lg:py-24 lg:flex lg:justify-center">
+        <div className="flex flex-col items-center text-sm gap-12 max-w-7xl lg:px-8">
             <Topic title = "About me"/>
             <div className="mt-[-24px] flex flex-col gap-[48px] lg:grid lg:grid-cols-2 lg:gap-12">
                 <Portrait number = {2}/>

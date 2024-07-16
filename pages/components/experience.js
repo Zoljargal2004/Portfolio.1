@@ -44,7 +44,7 @@ export function Experience() {
     <div className="bg-[--sec-bg-color] px-4 py-16">
       <div className="flex flex-col items-center gap-4">
         <Topic title="Experience" />
-        <span className="text-[18px] mb-2">
+        <span className="text-[18px] mb-8">
           Here is a quick summary of my most recent experiences:
         </span>
         <WorkExperience />
@@ -62,17 +62,17 @@ function WorkExperience() {
             key={"experience_" + experience_list.indexOf(experience)}
             className="bg-[--line-bg] rounded-xl p-8"
           >
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 lg:flex-row lg:justify-between">
               <div className="h-7">
                 <img
                   src={"/Images/Job_Logo/" + experience.work + ".svg"}
                   className="object-contain"
                 />
               </div>
-              <span>
+              <span className="lg:order-2">
                 {experience.hire_date} - {experience.fire_date}
               </span>
-              <div className="flex flex-col gap-4 ">
+              <div className="flex flex-col gap-4 lg:w-96">
                 <h2 className="font-semibold text-lg"> 
                   {experience.job_title}
                 </h2>
@@ -84,7 +84,7 @@ function WorkExperience() {
                         key={
                           "task" + experience_list.indexOf(experience) + (experience.description.indexOf(task))
                         }
-                        className="mb-1"
+                        className="mb-1 lg:ml-4"
                       >
                         {task}
                       </li>

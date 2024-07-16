@@ -22,9 +22,9 @@ const skills_lis = [
 export function Skills() {
   return (
     <div className="bg-[--bg-color] px-4 py-16">
-      <div className="flex flex-col gap-4 items-center">
+      <div className="flex flex-col gap-4 items-center max-w-7xl lg:m-auto">
         <Topic title="Skills" />
-        <span className="mb-2 text-[18px]">
+        <span className="text-[18px] mb-8">
           The skills, tools and technologies I am really good at:
         </span>
         <Skill_set/>
