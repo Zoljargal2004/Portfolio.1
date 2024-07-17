@@ -1,5 +1,5 @@
 import { stringify } from "postcss";
-import { Topic } from "./About";
+import { Topic } from "./components/about";
 
 let i = 0;
 

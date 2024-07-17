@@ -2,6 +2,8 @@ import Link from "next/link";
 import { IoMoonOutline } from "react-icons/io5";
 import { GiHamburgerMenu, GiHidden } from "react-icons/gi";
 
+const nav_bar = [{name: "About", link : "/About"},]
+
 export function Header() {
   let logo = "<SS/>";
   return (
@@ -9,7 +11,7 @@ export function Header() {
       <div className="flex justify-between lg:px-8 items-center w-[100%] max-w-[1280px]">
         <span className="text-3xl text-bold">{logo}</span>
         <div className=" hidden gap-6 items-center lg:flex">
-          <Link href={"#"}>About</Link>
+          <Link href={"/experience"}>About</Link>
           <Link href={"#"}>Work</Link>
           <Link href={"#"}>Testimonials</Link>
           <Link href={"#"}>Contact</Link>

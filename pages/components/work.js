@@ -1,7 +1,6 @@
-import { Topic } from "./About";
+import { Topic } from "./components/about";
 import Image from "next/image";
 import { CiShare1 } from "react-icons/ci";
-
 
 const work_lis = [
   {
@@ -59,8 +58,7 @@ const work_lis = [
       "Storybook",
       "Git",
     ],
-  }
-  
+  },
 ];
 
 export function Work() {
@@ -82,8 +80,16 @@ function Work_Projs() {
     <div className="flex flex-col gap-6">
       {work_lis.map((project) => {
         return (
-          <div key={"project"+work_lis.indexOf(project)} className={"flex flex-col rounded-xl overflow-hidden " + (work_lis.indexOf(project) % 2 ? "lg:flex-row" : "lg:flex-row-reverse")}>
-            <div className="p-8 bg-[--portrait-bg] max-w-[640px] lg:flex-1 lg:p-12">
+          <div
+            key={"project" + work_lis.indexOf(project)}
+            className={
+              "flex flex-col rounded-xl overflow-hidden " +
+              (work_lis.indexOf(project) % 2
+                ? "lg:flex-row"
+                : "lg:flex-row-reverse")
+            }
+          >
+            <div className="p-8 bg-[--portrait-bg] lg:w-[50%] lg:p-12">
               <div className="rounded-xl overflow-hidden">
                 <img
                   className="object-center"
@@ -91,18 +97,26 @@ function Work_Projs() {
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-6 p-8 bg-[--line-bg] lg:flex-1 ">
-              <span className="text-lg text-[--head-color] font-bold lg:text-xl">{project.name}</span>
-              <p>
-                {project.description}
-              </p>
-                <div className="flex gap-2 gap-y-2 flex-wrap">
-                    {project.tags.map((tag) =>{
-                        return <Topic key={"tag"+work_lis.indexOf.project +project.tags.indexOf(tag)} title = {tag}/>
-                    })}
-                </div>
-                <CiShare1 size={24}/>
-
+            <div className="flex flex-col gap-6 p-8 bg-[--line-bg] lg:w-[50%] lg:flex-1 ">
+              <span className="text-lg text-[--head-color] font-bold lg:text-xl">
+                {project.name}
+              </span>
+              <p>{project.description}</p>
+              <div className="flex gap-2 gap-y-2 flex-wrap">
+                {project.tags.map((tag) => {
+                  return (
+                    <Topic
+                      key={
+                        "tag" +
+                        work_lis.indexOf.project +
+                        project.tags.indexOf(tag)
+                      }
+                      title={tag}
+                    />
+                  );
+                })}
+              </div>
+              <CiShare1 size={24} />
             </div>
           </div>
         );

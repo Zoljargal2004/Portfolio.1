@@ -1,11 +1,10 @@
 import { IoCopy } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
-import { Topic } from "./About";
+import { Topic } from "./components/about";
 import { IoIosCall } from "react-icons/io";
 import { Social } from "./hero";
 
 export function Contact() {
-  console.log(document.body.clientWidth)
   let email = "reachsagarshah@gmail.com";
   let phone = "+91 8980500565";
   return (

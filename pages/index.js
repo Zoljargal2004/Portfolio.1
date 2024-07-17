@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Header } from "./components/header";
 import { Hero } from "./components/hero";
-import { About } from "./components/About";
+import { About } from "./components/about";
 import { Skills } from "./components/skills";
 import { Experience } from "./components/experience";
 import { Work } from "./components/work";
@@ -16,7 +16,7 @@ export default function Home() {
     <main>
       <Header />
       <Hero/>
-      <About />
+      <About/>
       <Skills/>
       <Experience/>
       <Work/>
