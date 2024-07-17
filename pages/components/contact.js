@@ -1,6 +1,6 @@
 import { IoCopy } from "react-icons/io5";
 import { IoIosMail } from "react-icons/io";
-import { Topic } from "./components/about";
+import { Topic } from "./about";
 import { IoIosCall } from "react-icons/io";
 import { Social } from "./hero";
 

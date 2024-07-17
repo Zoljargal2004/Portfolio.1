@@ -33,9 +33,9 @@ export function Portrait(props) {
             src={props.number == 2 ? "/Images/Pic2.png" : "/Images/Pic.png"}
             className={
               (props.number == 2
-                ? "w-[280px] lg:w-[400px] h-[360px] lg:h-[480px] lg:left-10"
-                : "w-[240px] lg:w-[280px] h-[280px] lg:h-[320px] lg:left-[-40px] ") +
-              " absolute bottom-3 left-3  lg:bottom-10 "
+                ? "w-[280px] lg:w-[400px] h-[360px] lg:h-[480px] lg:left-10 border-[--sec-bg-color] "
+                : "w-[240px] lg:w-[280px] h-[280px] lg:h-[320px] lg:left-[-40px] border-[--bg-color] ") +
+              " absolute bottom-3 left-3  lg:bottom-10 border-[8px]"
             }
           />
         </div>

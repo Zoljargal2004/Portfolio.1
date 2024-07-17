@@ -1,4 +1,4 @@
-import { Topic } from "./components/about";
+import { Topic } from "./about";
 import Image from "next/image";
 const skills_lis = [
   { name: "Javascript" },

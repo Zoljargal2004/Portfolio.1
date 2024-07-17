@@ -1,4 +1,4 @@
-import { Topic } from "./components/about";
+import { Topic } from "./about";
 import Image from "next/image";
 import { CiShare1 } from "react-icons/ci";
 
