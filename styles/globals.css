@@ -7,7 +7,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-
+/* 
   --bg-color: #030712;
   --head-color: #F9FAFB;
   --text-color: #D1D5DB;
@@ -17,7 +17,7 @@
 
   --status-available: #10B981;
 
-  --sec-bg-color : #111827;
+  --sec-bg-color : #111827; */
 }
 
 @media (prefers-color-scheme: dark) {

@@ -1,6 +1,7 @@
 import { Topic } from "./about";
 import Image from "next/image";
 import { CiShare1 } from "react-icons/ci";
+import { com_styles } from "./header";
 
 const work_lis = [
   {
@@ -63,7 +64,7 @@ const work_lis = [
 
 export function Work() {
   return (
-    <div className="bg-[--bg-color] px-4 py-16">
+    <div className={`bg-[#FFFFFF] dark:bg-[#030712] px-4 py-16`}>
       <div className="flex flex-col gap-4 items-center max-w-7xl lg:m-auto">
         <Topic title="Work" />
         <span className="mt-[-8px] text-lg text-center mb-8">
@@ -89,7 +90,7 @@ function Work_Projs() {
                 : "lg:flex-row-reverse")
             }
           >
-            <div className="p-8 bg-[--portrait-bg] lg:w-[50%] lg:p-12">
+            <div className={`p-8 bg-[#E5E7EB] dark:bg-[#374151] lg:w-[50%] lg:p-12`}>
               <div className="rounded-xl overflow-hidden">
                 <img
                   className="object-center"
@@ -97,8 +98,8 @@ function Work_Projs() {
                 />
               </div>
             </div>
-            <div className="flex flex-col gap-6 p-8 bg-[--line-bg] lg:w-[50%] lg:flex-1 ">
-              <span className="text-lg text-[--head-color] font-bold lg:text-xl">
+            <div className={`flex flex-col gap-6 p-8 bg-[#F3F4F6] dark:bg-[#1F2937] lg:w-[50%] lg:flex-1 `}>
+              <span className={`text-lg text-[#111827] dark:text-[#F9FAFB] font-bold lg:text-xl`}>
                 {project.name}
               </span>
               <p>{project.description}</p>

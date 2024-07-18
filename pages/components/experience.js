@@ -41,7 +41,7 @@ const experience_list = [
 
 export function Experience() {
   return (
-    <div className="bg-[--sec-bg-color] px-4 py-16">
+    <div className="bg-[#F9FAFB] dark:bg-[#111827] px-4 py-16">
       <div className="flex flex-col items-center gap-4">
         <Topic title="Experience" />
         <span className="text-[18px] mb-8">
@@ -60,7 +60,7 @@ function WorkExperience() {
         return (
           <div
             key={"experience_" + experience_list.indexOf(experience)}
-            className="bg-[--line-bg] rounded-xl p-8"
+            className="bg-[#F3F4F6] dark:bg-[#1F2937] rounded-xl p-8"
           >
             <div className="flex flex-col gap-4 lg:flex-row lg:justify-between">
               <div className="h-7">

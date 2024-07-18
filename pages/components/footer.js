@@ -2,7 +2,7 @@ import { FaCopyright } from "react-icons/fa";
 
 export function Footer() {
   return (
-    <div className=" bg-[--sec-bg-color] py-6">
+    <div className=" bg-[#F9FAFB] dark:bg-[#111827] py-6">
       <div className="flex gap-2 justify-center">
         <FaCopyright size={24} />
         <span>

@@ -1,5 +1,6 @@
 import { Topic } from "./about";
 import Image from "next/image";
+import { com_styles } from "./header";
 const skills_lis = [
   { name: "Javascript" },
   { name: "Typescript" },
@@ -21,7 +22,7 @@ const skills_lis = [
 
 export function Skills() {
   return (
-    <div className="bg-[--bg-color] px-4 py-16">
+    <div className={`bg-[#FFFFFF] dark:bg-[#030712] px-4 py-16`}>
       <div className="flex flex-col gap-4 items-center max-w-7xl lg:m-auto">
         <Topic title="Skills" />
         <span className="text-[18px] mb-8">
