@@ -64,7 +64,7 @@ const work_lis = [
 
 export function Work() {
   return (
-    <div className={`bg-[#FFFFFF] dark:bg-[#030712] px-4 py-16`}>
+    <div className={`bg-[#FFFFFF] dark:bg-[#030712] px-4 py-16 text-[#4B5563] dark:text-[#D1D5DB]` }>
       <div className="flex flex-col gap-4 items-center max-w-7xl lg:m-auto">
         <Topic title="Work" />
         <span className="mt-[-8px] text-lg text-center mb-8">

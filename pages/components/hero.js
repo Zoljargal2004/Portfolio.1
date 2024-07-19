@@ -34,7 +34,7 @@ export function Portrait(props) {
             src={props.number == 2 ? "/Images/Pic2.png" : "/Images/Pic.png"}
             className={
               (props.number == 2
-                ? `w-[280px] lg:w-[400px] h-[360px] lg:h-[480px] lg:left-10 dark:border-[#111827] border-[#E5E7EB]`
+                ? `w-[280px] lg:w-[400px] h-[360px] lg:h-[480px] lg:left-10 dark:border-[#111827] border-[#F9FAFB]`
                 : `w-[240px] lg:w-[280px] h-[280px] lg:h-[320px] lg:left-[-40px] dark:border-[#030712] border-[#FFFFFF] `) +
               " absolute bottom-3 left-3  lg:bottom-10 border-[8px]"
             }
@@ -47,11 +47,11 @@ export function Portrait(props) {
 
 function Hero_Paragraph() {
   return (
-    <div className="flex flex-col gap-12">
+    <div className="flex flex-col gap-12 text-[#4B5563] dark:text-[#D1D5DB]">
       <h1 className={`mb-[-40px] dark:text-[#F9FAFB] text-[#111827] text-4xl text-bold lg:text-6xl `}>
         Hi, I’m Sagar 👋
       </h1>
-      <p>
+      <p className="">
         I'm a full stack developer (React.js & Node.js) with a focus on creating
         (and occasionally designing) exceptional digital experiences that are
         fast, accessible, visually appealing, and responsive. Even though I have

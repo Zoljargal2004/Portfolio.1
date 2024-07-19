@@ -1,8 +1,9 @@
-import { com_styles } from "./header"
+
 import { Portrait } from "./hero"
+import React from "react"
 
 export function About(){
-    return <div className={`dark:bg-[${com_styles[6].dark}] bg-[${com_styles[6].light}] px-4 py-16 lg:px-20 lg:py-24 lg:flex lg:justify-center`}>
+    return <div className={`dark:bg-[#111827] bg-[#F9FAFB] px-4 py-16 lg:px-20 lg:py-24 lg:flex lg:justify-center`}>
         <div className="flex flex-col items-center text-sm gap-12 max-w-7xl lg:px-8">
             <Topic title = "About me"/>
             <div className="mt-[-24px] flex flex-col gap-[48px] lg:grid lg:grid-cols-2 lg:gap-12">
@@ -15,12 +16,12 @@ export function About(){
 }
 
 export function Topic(props){
-    return <div className={`dark:bg-[${com_styles[5].dark}] bg-[${com_styles[5].light}] px-5 py-1 rounded-[12px]`}>{props.title}</div>
+    return <div className={`dark:bg-[#374151] bg-[#E5E7EB] px-5 py-1 rounded-[12px] text-[#4B5563] dark:text-[#D1D5DB]`}>{props.title}</div>
 }
 
 function About_para(){
-    return <div className=" flex flex-col gap-4">
-        <h1 className={`text-[${com_styles[1].light}] dark:text-[${com_styles[1].dark}] text-2xl mb-2 lg:text-3xl`}>Curious about me? Here you have it:</h1>
+    return <div className=" flex flex-col gap-4 text-[#4B5563] dark:text-[#D1D5DB]">
+        <h1 className={`text-[#111827] dark:text-[#F9FAFB] text-2xl mb-2 lg:text-3xl`}>Curious about me? Here you have it:</h1>
         <p>
         I'm a passionate, self-proclaimed designer who specializes in full stack development (React.js & Node.js). I am very enthusiastic about bringing the technical and visual aspects of digital products to life. User experience, pixel perfect design, and writing clear, readable, highly performant code matters to me.
         </p>

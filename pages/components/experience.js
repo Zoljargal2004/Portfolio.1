@@ -55,7 +55,7 @@ export function Experience() {
 
 function WorkExperience() {
   return (
-    <div className="w-[100%] max-w-[896px] flex flex-col gap-6">
+    <div className="w-[100%] max-w-[896px] flex flex-col gap-6 text-[#4B5563] dark:text-[#D1D5DB]">
       {experience_list.map((experience) => {
         return (
           <div

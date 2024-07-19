@@ -8,7 +8,7 @@ export function Contact() {
   let email = "reachsagarshah@gmail.com";
   let phone = "+91 8980500565";
   return (
-    <div className="px-4 py-16 bg-[#FFFFFF] dark:bg-[#030712]">
+    <div className="px-4 py-16 bg-[#FFFFFF] dark:bg-[#030712] text-[#4B5563] dark:text-[#D1D5DB]">
       <div className="flex flex-col items-center text-center gap-6">
         <Topic title="Get in touch" />
         <p className="mt-[-8px] text-xl max-w-xl">
