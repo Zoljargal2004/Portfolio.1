@@ -54,7 +54,7 @@ export function Header() {
         <div className=" hidden gap-6 items-center lg:flex">
           {nav_bar.map((bar) => {
             for (let i = 0; i < nav_bar.length; i++) {
-              return <Link href={bar.link} className="text-[#4B5563] dark:text-[#D1D5DB]">{bar.name}</Link>;
+              return <Link key={"bar" +nav_bar.indexOf(bar)} href={bar.link} className="text-[#4B5563] dark:text-[#D1D5DB]">{bar.name}</Link>;
             }
           })}
           <div
@@ -104,7 +104,7 @@ export function Header() {
             className={`border-y-[1px] dark:border-[#1F2937] border-[#F3F4F6] flex flex-col gap-4 p-4`}
           >
             {nav_bar.map((bar) => (
-              <Link className="bold" href={bar.link}>
+              <Link className="bold" key={"mbar" + nav_bar.indexOf(bar)} href={bar.link}>
                 {bar.name}
               </Link>
             ))}
