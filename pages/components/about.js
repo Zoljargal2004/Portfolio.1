@@ -2,6 +2,8 @@
 import { Portrait } from "./hero"
 import React from "react"
 
+//I am having problem here
+
 export function About(){
     return <div className={`dark:bg-[#111827] bg-[#F9FAFB] px-4 py-16 lg:px-20 lg:py-24 lg:flex lg:justify-center`}>
         <div className="flex flex-col items-center text-sm gap-12 max-w-7xl lg:px-8">
