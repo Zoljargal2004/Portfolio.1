@@ -1,3 +1,5 @@
+//hero.js
+
 import Image from "next/image";
 import { IoLocationOutline } from "react-icons/io5";
 import { LuGithub } from "react-icons/lu";
