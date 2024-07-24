@@ -3,6 +3,7 @@ import { IoIosMail } from "react-icons/io";
 import { Topic } from "./about";
 import { IoIosCall } from "react-icons/io";
 import { Social } from "./hero";
+import React from "react";
 
 export function Contact() {
   let email = "reachsagarshah@gmail.com";
