@@ -84,7 +84,7 @@ export function Header() {
           onClick={closeMenu}
         ></div>
         <div
-          className={`top-0 right-0 bottom-0 transition-all duration-1000 fixed dark:bg-[${
+          className={`top-0 right-4 bottom-0 transition-all duration-1000 fixed dark:bg-[${
             com_styles[0].dark
           }] bg-[#FFFFFF] dark:bg-[#030712] z-10 ease-in-out ${
             open ? "left-0" : "left-full"
